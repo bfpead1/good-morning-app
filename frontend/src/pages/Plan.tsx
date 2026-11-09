@@ -104,7 +104,7 @@ export function Plan() {
       )}
 
       {aiEnabled && (
-        <div className="fixed inset-x-0 bottom-16 z-10 mx-auto max-w-[480px] border-t border-card-border bg-page/95 px-6 py-4 backdrop-blur">
+        <div className="fixed inset-x-0 bottom-16 z-10 mx-auto max-w-[480px] md:bottom-0 md:left-[232px] md:max-w-[720px] md:border-x md:rounded-t-[16px] border-t border-card-border bg-page/95 px-6 py-4 backdrop-blur">
           <PrimaryButton onClick={() => generate.mutate()} disabled={generate.isPending}>
             {generate.isPending
               ? "Planning…"

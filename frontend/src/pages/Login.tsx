@@ -33,8 +33,13 @@ export function Login() {
     : null;
 
   return (
-    <div className="flex min-h-screen flex-col justify-center px-6 py-10">
+    <div className="mx-auto flex min-h-screen max-w-[480px] flex-col justify-center px-6 py-10">
       <header className="mb-8 text-center">
+        <img
+          src="/logo.jpg"
+          alt=""
+          className="mx-auto mb-4 h-28 w-28 rounded-[24px] object-cover shadow-sm"
+        />
         <p className="text-[13px] font-semibold uppercase tracking-wide text-ink-soft-55">
           Morning
         </p>

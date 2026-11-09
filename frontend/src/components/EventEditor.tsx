@@ -127,7 +127,7 @@ export function EventEditor({ event, onClose }: { event: CalendarEvent | null; o
 
   return (
     <div
-      className="fixed inset-0 z-30 flex items-end justify-center bg-ink/40"
+      className="fixed inset-0 z-30 flex items-end justify-center bg-ink/40 md:items-center md:p-6"
       onClick={onClose}
       role="presentation"
     >
@@ -137,7 +137,7 @@ export function EventEditor({ event, onClose }: { event: CalendarEvent | null; o
         role="dialog"
         aria-modal="true"
         aria-label={event ? "Edit event" : "New event"}
-        className="max-h-[90vh] w-full max-w-[480px] overflow-y-auto rounded-t-[20px] bg-card p-6 pb-[max(24px,env(safe-area-inset-bottom))]"
+        className="max-h-[90vh] w-full max-w-[480px] overflow-y-auto rounded-t-[20px] md:max-w-[560px] md:rounded-[20px] md:shadow-xl bg-card p-6 pb-[max(24px,env(safe-area-inset-bottom))]"
       >
         <div className="mb-4 flex items-center justify-between">
           <h2 className="font-display text-[20px] font-medium text-ink">

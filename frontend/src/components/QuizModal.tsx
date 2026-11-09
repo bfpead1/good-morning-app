@@ -82,13 +82,13 @@ export function QuizModal({ book, chapter, onClose }: { book: Book; chapter: num
   const title = `${book.name} ${chapter}`;
 
   return (
-    <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/40" onClick={onClose} role="presentation">
+    <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/40 md:items-center md:p-6" onClick={onClose} role="presentation">
       <div
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-label={`${title} quiz`}
-        className="max-h-[90vh] w-full max-w-[480px] overflow-y-auto rounded-t-[20px] bg-card p-6 pb-[max(24px,env(safe-area-inset-bottom))]"
+        className="max-h-[90vh] w-full max-w-[480px] overflow-y-auto rounded-t-[20px] md:max-w-[560px] md:rounded-[20px] md:shadow-xl bg-card p-6 pb-[max(24px,env(safe-area-inset-bottom))]"
       >
         <div className="mb-4 flex items-baseline justify-between gap-3">
           <h2 className="font-display text-[20px] font-medium text-ink">{title}</h2>

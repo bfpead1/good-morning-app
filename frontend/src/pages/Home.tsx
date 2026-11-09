@@ -85,6 +85,7 @@ export function Home() {
         </div>
       </header>
 
+      <div className="lg:columns-2 lg:gap-5 [&>section]:break-inside-avoid">
       <section className="mb-5 rounded-card border border-card-border bg-card p-[18px] text-ink">
         <p className="text-[13px] font-semibold uppercase tracking-wide text-ink/60">
           First up
@@ -341,7 +342,7 @@ export function Home() {
         </Card>
       </section>
 
-      <section className="mb-2">
+      <section className="mb-5">
         <SectionLabel>Workout of the Day</SectionLabel>
         <Card>
           {!workout?.day ? (
@@ -393,6 +394,7 @@ export function Home() {
           )}
         </Card>
       </section>
+      </div>
     </div>
   );
 }
